@@ -52,7 +52,7 @@ data_testing = pd.DataFrame(df['Close'][int(len(df)*0.70):int(len(df))])
 scaler = MinMaxScaler(feature_range=(0,1))
 
 # Load model
-model = load_model(r'C:\Users\ARPITA CHOUDHURY\PythonProject\mini project\stock trend prediction\my_model.keras')
+model = load_model('my_model.keras')
 
 # Testing part
 past_100_days = data_training.tail(100)
